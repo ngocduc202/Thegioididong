@@ -1135,6 +1135,7 @@ footer {
 }
 .application-col-2 {
   width: 33%;
+  overflow: hidden;
 }
 .application-col-1-content a {
   color: #333;
@@ -1149,7 +1150,7 @@ footer {
   margin-bottom: 10px;
 }
 .application-col-1-content-item-img {
-  position: relative;
+  /* position: relative; */
   width: 120px;
   height: 70px;
 }
@@ -1205,6 +1206,7 @@ footer {
 .application-col-2-img > img {
   display: block;
   width: 100%;
+  border-radius: 4px;
 }
 .application-col-2-img-content-logo {
   width: 60px;
@@ -1212,6 +1214,7 @@ footer {
 .application-col-2-img-content-logo > img {
   display: block;
   width: 100%;
+  border-radius: 4px;
 }
 .application-col-2-img-content-text {
   padding-left: 10px;
@@ -1248,4 +1251,44 @@ footer {
   position: absolute;
   top: 6px;
   width: 5px;
+}
+.application-col-2 {
+  position: relative;
+}
+.application-col-2-btn {
+  position: absolute;
+  top: 33%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.application-col-2:hover i {
+  opacity: 1;
+}
+.application-col-2-btn i {
+  color: #333;
+  font-size: 32px;
+  height: 50px;
+  width: 25px;
+  background-color: rgb(248, 248, 248);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-50%);
+  opacity: 0.4;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.application-col-2-container {
+  position: relative;
+  transition: all 0.3s ease;
+}
+.application-col-2-content {
+  position: absolute;
+}
+.application-col-2-content:nth-child(2) {
+  transform: translateX(100%);
+}
+.application-col-2-content:nth-child(3) {
+  transform: translateX(200%);
 }

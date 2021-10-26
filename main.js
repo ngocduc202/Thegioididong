@@ -153,3 +153,23 @@ leftbtnfive.addEventListener("click", function () {
     ".product-gallery-four-content-product-content"
   ).style.right = index * 100 + "%";
 });
+// application
+const rightbtnsix = document.querySelector(".fa-chevron-right-six");
+const leftbtnsix = document.querySelector(".fa-chevron-left-six");
+const imgNumbersix = document.querySelectorAll(".application-col-2-content ");
+rightbtnsix.addEventListener("click", function () {
+  index = index + 1;
+  if (index > imgNumbersix.length - 1) {
+    index = 0;
+  }
+  document.querySelector(".application-col-2-container").style.right =
+    index * 100 + "%";
+});
+leftbtnsix.addEventListener("click", function () {
+  index = index - 1;
+  if (index < 0) {
+    index = imgNumbersix.length - 1;
+  }
+  document.querySelector(".application-col-2-container").style.right =
+    index * 100 + "%";
+});
