@@ -6,6 +6,15 @@ adressbtn.addEventListener("click", function () {
 adressclose.addEventListener("click", function () {
   document.querySelector(".adress-form").style.display = "none";
 });
+// slider-mobile
+const sliderbtn = document.querySelector("#sidebar-menu-open");
+const sliderclose = document.querySelector("#sidebar-menu-close");
+sliderbtn.addEventListener("click", function () {
+  document.querySelector(".sidebar-menu").style.transform = "translateY(0)";
+});
+sliderclose.addEventListener("click", function () {
+  document.querySelector(".sidebar-menu").style.transform = "translateY(-100%)";
+});
 // slider
 const rightbtn = document.querySelector(".fa-chevron-right");
 const leftbtn = document.querySelector(".fa-chevron-left");
@@ -173,3 +182,33 @@ leftbtnsix.addEventListener("click", function () {
   document.querySelector(".application-col-2-container").style.right =
     index * 100 + "%";
 });
+// watch-slider
+const child1 = document.getElementById("child1");
+const child2 = document.getElementById("child2");
+const child3 = document.getElementById("child3");
+const child4 = document.getElementById("child4");
+function display_child2() {
+  child1.classList.remove("display");
+  child2.classList.add("display");
+  child3.classList.remove("display");
+  child4.classList.remove("display");
+}
+function display_child3() {
+  child2.classList.remove("display");
+  child3.classList.add("display");
+  child1.classList.remove("display");
+  child4.classList.remove("display");
+}
+function display_child4() {
+  child3.classList.remove("display");
+  child4.classList.add("display");
+  child1.classList.remove("display");
+  child2.classList.remove("display");
+}
+function display_child1() {
+  child3.classList.remove("display");
+  child4.classList.remove("display");
+  child1.classList.add("display");
+  child2.classList.remove("display");
+}
+// select

@@ -8,17 +8,21 @@
   <link rel="stylesheet" href="./fontawesome-free-5.15.4/css/all.min.css">
   <link rel="stylesheet" href="https://fonts.google.com/icons?selected=Material%20Icons%20Outlined%3Awatch%3A">
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./reponsive.css">
+  <link rel="stylesheet" href="./grid.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <title>Thế giới di động</title>
 </head>
 <body>
   <header>
-    <img src="./img/slide.png" alt="">
+    <img src="./img/slide.png" alt="" class="slider-pc">
+    <img src="./img/slide-mobile.png" alt="" class="slider-mobile">
   </header>
   <nav>
-    <div class="container">
+    <div class="container ">
       <ul>
         <li><a href=""><img style="width:150px" src="./img/logo1.jpg" alt=""></a></li>
-        <li id="adress-form"><a href="#">Thái Bình <i class="fas fa-sort-down"></i> </a> </li>
+        <li id="adress-form"><a href="#" class="adress">Thái Bình <i class="fas fa-sort-down"></i> </a> </li>
         <li><input type="text" placeholder="Tìm kiếm "><i class="fas fa-search"></i></li>
         <li><a href=""></a><button><i class="fas fa-shopping-cart"></i>Giỏ hàng  </button></li>
         <li><a href="">Lịch sử <br> đơn hàng </a></li>
@@ -69,8 +73,70 @@
       </ul>
     </div>
   </nav>
-  <section class="menu-bar">
+  <!-- nav-mobile -->
+  <nav class="nav-mobile">
     <div class="container">
+      <ul>
+        <li><a href="#"><img src="./img/logo-mobile.jpg" alt="" class="logo-mobile"></a></li>
+        <li><input type="text" placeholder="Tìm kiếm "><i class="fas fa-search"></i></li>
+        <li id="adress-form"><a href="#">Thái Bình  </a> <i class="fas fa-map-marker-alt"></i> </li>
+        <li>Lịch sử đơn hàng</li>
+        <li><i class="fas fa-shopping-cart"></i></li>
+        <li id="sidebar-menu-open"><i class="fas fa-bars"></i></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="sidebar-menu">
+    <div class="sidebar-menu-content">
+      <li  id="sidebar-menu-close"><a href="#" class="sidebar-menu-content-close">X Đóng</a> </li>
+      <div class="sidebar-menu-content-one">
+        <ul>
+          <li class="sidebar-menu-content-one-items"><a href="#" class="sidebar-menu-content-one-links">Điện thoại </a></li>
+          <li class="sidebar-menu-content-one-items"><a href="#" class="sidebar-menu-content-one-links">Laptop  </a></li>
+          <li class="sidebar-menu-content-one-items"><a href="#" class="sidebar-menu-content-one-links">Tablet </a></li>
+          <li class="sidebar-menu-content-one-items"><a href="#" class="sidebar-menu-content-one-links">Phụ kiện </a></li>
+          <li class="sidebar-menu-content-one-items"><a href="#" class="sidebar-menu-content-one-links">Đồng hồ thời trang  </a></li>
+          <li class="sidebar-menu-content-one-items"><a href="#" class="sidebar-menu-content-one-links">Đồng hồ thông minh </a></li>
+          <li class="sidebar-menu-content-one-items"><a href="#" class="sidebar-menu-content-one-links">Máy tính bộ  </a></li>
+          <li class="sidebar-menu-content-one-items"><a href="#" class="sidebar-menu-content-one-links">Màn hình máy tính  </a></li>
+          <li class="sidebar-menu-content-one-items"><a href="#" class="sidebar-menu-content-one-links">Máy in  </a></li>
+          <li class="sidebar-menu-content-one-items"><a href="#" class="sidebar-menu-content-one-links">Mực in  </a></li>
+          <li class="sidebar-menu-content-one-items"><a href="#" class="sidebar-menu-content-one-links">Máy cũ giá rẻ </a></li>
+          <li class="sidebar-menu-content-one-items"><a href="#" class="sidebar-menu-content-one-links">Sim, thẻ cào </a></li>
+          <li class="sidebar-menu-content-one-items"><a href="#" class="sidebar-menu-content-one-links">Trả góp điện nước  </a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-menu-content-two">
+        <div class="sidebar-menu-content-two-items">
+          <h3>Nhóm hàng mới </h3>
+          <li>Phụ kiện ô tô</li>
+          <li>Thiết bị nhà thông minh</li>
+          <li>Màn hình máy tính </li>
+          <li>Thẻ cào giảm đến 5%</li>
+        </div>
+        <div class="sidebar-menu-content-two-items">
+          <h3>Thế giới công nghệ  </h3>
+          <li>24H Công nghệ </li>
+          <li>Game app </li>
+          <li>Hỏi đáp  </li>
+        </div>
+
+      </div>
+      <div class="sidebar-menu-content-three">
+        <li><a href="#">Lịch sử mua hàng </a></li>
+        <li>Tổng đài <a href="#">1800.1060</a> (7:30-22:00)</li>
+        <li>Xem <a href="#">2758</a>(8:00 -22:00)</li>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <section class="menu-bar">
+    <div class="container ">
       <div class="menu-bar-content">
         <ul>
           <li><a href="#"><i class="fas fa-mobile-alt"></i>Điện thoại </a></li>
@@ -164,7 +230,7 @@
   </section>
   <!-- Slider -->
   <section class="slider">
-    <div class="container">
+    <div class="container ">
       <div class="silder-content">
         <div class="silder-content-left">
           <div class="slider-content-left-top-container">
@@ -199,14 +265,33 @@
       </div>
     </div>
   </section>
+  <!-- nav-mobile-two -->
+  <div class="nav-mobile-two">
+    <div class="container">
+      <ul>
+        <li class="nav-mobile-two-items"> <a href="#" class="nav-mobile-two-links">Điện thoại </a></li>
+        <li class="nav-mobile-two-items"> <a href="#" class="nav-mobile-two-links">Laptop </a></li>
+        <li class="nav-mobile-two-items"> <a href="#" class="nav-mobile-two-links">Tablet</a></li>
+        <li class="nav-mobile-two-items"> <a href="#" class="nav-mobile-two-links">Phụ kiện </a></li>
+        <li class="nav-mobile-two-items"> <a href="#" class="nav-mobile-two-links">Điện thoại thông minh  </a></li>
+        <li class="nav-mobile-two-items"> <a href="#" class="nav-mobile-two-links">Đồng hồ thời trang  </a></li>
+        <li class="nav-mobile-two-items"> <a href="#" class="nav-mobile-two-links">PC Máy in </a></li>
+        <li class="nav-mobile-two-items"> <a href="#" class="nav-mobile-two-links">Máy cũ giá rẻ</a></li>
+        <li class="nav-mobile-two-items"> <a href="#" class="nav-mobile-two-links free ">Sim thẻ cào  </a></li>
+        <li class="nav-mobile-two-items"> <a href="#" class="nav-mobile-two-links">Điện nước trả góp</a></li>
+
+      </ul>
+    </div>
+  </div>
     <section class="banner-one">
-      <div class="container">
-        <img src="./img/slide1-1.png" alt="">
+      <div class="container ">
+        <img src="./img/slide1-1.png" alt="" class="banner-pc">
+        <img src="./img/slide-mobile1.png" alt="" class="banner-moblie">
       </div>
     </section>
     <!-- Slider-product -->
     <section class="slider-product-one">
-      <div class="container">
+      <div class="container ">
         <div class="slider-product-one-content">
           <div class="slider-product-one-content-title">
             <h2>Săn sale mỗi ngày </h2>
@@ -221,7 +306,7 @@
                   <div class="slider-product-one-content-item-text">
                       <li><img src="./img/logo.gif" alt=""><p>Đặt hàng trước </p></li>
                       <li>Iphone13 Pro Max 128gb </li>
-                      <li>Hàn sắp về  </li>
+                      <li>Hàng sắp về  </li>
                       <li><a href="#">32.999.000 <sup>đ</sup></a> <span>-6%</span> </li>
                       <li>28.000.000 <sup>đ</sup> </li>
                       <li>
@@ -500,12 +585,293 @@
 
           </div>
 
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper swiper-wrapper-container">
+                <div class="swiper-slide swiper-slide-items ">
+                  <img src="./img/anh8.jpg" alt="">
+                  <div class="swiper-text">
+                      <li class="swiper-text-title" >iPhone 12 Pro Max 128GB </li>
+                      <li class="swiper-text-title-one">Online giá rẻ </li>
+                      <li><a href="#" class="price-old-black">32.990.000<sup>đ</sup></a> <span>-7%</span> </li>
+                      <li class="price">31.490.000<sup>đ</sup> </li>
+                      <li>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                      </li>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide-items ">
+                  <img src="./img/anh7.jpg" alt="">
+                  <div class="swiper-text">
+                      <li class="swiper-text-title" >Samsung Galaxy Z Flip3 5G 256GB </li>
+                      <li class="swiper-text-title-one">Online giá rẻ </li>
+                      <li><a href="#" class="price-old-black">26.490.000<sup>đ</sup></a> <span>-7%</span> </li>
+                      <li class="price">25.490.000<sup>đ</sup> </li>
+                      <li>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                      </li>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide-items ">
+                  <img src="./img/anh14.jpg" alt="">
+                  <div class="swiper-text">
+                      <li class="swiper-text-title" >OPPO Reno6 Pro 5G</li>
+                      <li class="swiper-text-title-one">Giảm giá </li>
+                      <li><a href="#" class="price-old-black">18.990.000<sup>đ</sup></a> <span>-5%</span> </li>
+                      <li class="price">17.990.000<sup>đ</sup> </li>
+                      <li>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                      </li>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide-items ">
+                  <img src="./img/anh9.jpg" alt="">
+                  <div class="swiper-text">
+                      <li class="swiper-text-title" >Vivo Y20s </li>
+                      <li class="swiper-text-title-one">Online giá rẻ </li>
+                      <li><a href="#" class="price-old-black">4.990.000<sup>đ</sup></a> <span>-6%</span> </li>
+                      <li class="price">4.690.000<sup>đ</sup> </li>
+                      <li>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star "></i>
+                      </li>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide-items ">
+                  <img src="./img/anh10.jpg" alt="">
+                  <div class="swiper-text">
+                      <li class="swiper-text-title" >Realme 8 5G </li>
+                      <li class="swiper-text-title-one">Online giá rẻ </li>
+                      <li><a href="#" class="price-old-black">7.990.000<sup>đ</sup></a> <span>-5%</span> </li>
+                      <li class="price">7.590.000<sup>đ</sup> </li>
+                      <li>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star "></i>
+                      </li>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide-items ">
+                  <img src="./img/anh11.jpg" alt="">
+                  <div class="swiper-text">
+                      <li class="swiper-text-title" >iPhone 11 256GB </li>
+                      <li class="swiper-text-title-one">Trợ giá online  </li>
+                      <li><a href="#" class="price-old-black">21.490.000<sup>đ</sup></a> <span>-10%</span> </li>
+                      <li class="price">20.490.000<sup>đ</sup> </li>
+                      <li>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star "></i>
+                      </li>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide-items ">
+                  <img src="./img/anh12.jpg" alt="">
+                  <div class="swiper-text">
+                      <li class="swiper-text-title" >Samsung Galaxy A52 5G </li>
+                      <li class="swiper-text-title-one">Ưu đãi 3x</li>
+                      <li><a href="#" class="price-old-black">10.990.000<sup>đ</sup></a> <span>-9%</span> </li>
+                      <li class="price">9.490.000<sup>đ</sup> </li>
+                      <li>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star "></i>
+                      </li>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide-items ">
+                  <img src="./img/anh13.jpg" alt="">
+                  <div class="swiper-text">
+                      <li class="swiper-text-title" >Vivo Y12s (4GB/128GB) </li>
+                      <li class="swiper-text-title-one">Online giá rẻ </li>
+                      <li><a href="#" class="price-old-black">4.290.000<sup>đ</sup></a> <span>-11%</span> </li>
+                      <li class="price">3.790.000<sup>đ</sup> </li>
+                      <li>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                      </li>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide-items ">
+                  <img src="./img/anh49.jpg" alt="">
+                  <div class="swiper-text">
+                      <li class="swiper-text-title" >OPPO Reno5 5G</li>
+                      <li class="swiper-text-title-one">Online giá rẻ </li>
+                      <li><a href="#" class="price-old-black">11.990.000<sup>đ</sup></a> <span>-10%</span> </li>
+                      <li class="price">10.990.000<sup>đ</sup> </li>
+                      <li>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                      </li>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide-items ">
+                  <img src="./img/anh15.jpg" alt="">
+                  <div class="swiper-text">
+                      <li class="swiper-text-title" >Acer Nitro 5 Gaming AN515 57 54MV i5 11400H (NH.QENSV.003) </li>
+                      <li class="swiper-text-title-one">Ưu đãi x3 HSSV</li>
+                      <li><a href="#" class="price-old-black">26.490.000<sup>đ</sup></a> <span>-7%</span> </li>
+                      <li class="price">25.490.000<sup>đ</sup> </li>
+                      <li>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                      </li>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide-items ">
+                  <img src="./img/anh16.jpg" alt="">
+                  <div class="swiper-text">
+                      <li class="swiper-text-title" >MSI Katana Gaming GF66 11UC i7 11800H (224VN) </li>
+                      <li class="swiper-text-title-one">Ưu đãi x3 HSSV </li>
+                      <li><a href="#" class="price-old-black">29.990.000<sup>đ</sup></a> <span>-10%</span> </li>
+                      <li class="price">29.790.000<sup>đ</sup> </li>
+                      <li>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star "></i>
+                      </li>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide-items ">
+                  <img src="./img/anh18.jpg" alt="">
+                  <div class="swiper-text">
+                      <li class="swiper-text-title" >Samsung Galaxy Watch 4 LTE 44mm </li>
+                      <li class="swiper-text-title-one">Mocha giảm 300k </li>
+                      <!-- <li><a href="#" class="price-old-black">26.490.000<sup>đ</sup></a> <span>-7%</span> </li> -->
+                      <li class="price">7.990.000<sup>đ</sup> </li>
+                      <li>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                      </li>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide-items ">
+                  <img src="./img/anh19.jpg" alt="">
+                  <div class="swiper-text">
+                      <li class="swiper-text-title" >Apple Watch S6 40mm viền nhôm dây cao su</li>
+                      <li class="swiper-text-title-one">VN PAY giảm giá </li>
+                      <li><a href="#" class="price-old-black">11.990.000<sup>đ</sup></a> <span>-22%</span> </li>
+                      <li class="price">9.592.000<sup>đ</sup> </li>
+                      <li>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star "></i>
+                      </li>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide-items ">
+                  <img src="./img/watch3.jpg" alt="">
+                  <div class="swiper-text">
+                      <li class="swiper-text-title" >Samsung Galaxy Watch 3 LTE 45mm viền thép dây da</li>
+                      <li class="swiper-text-title-one">HOT SALE </li>
+                      <li><a href="#" class="price-old-black">10.990.000<sup>đ</sup></a> <span>-33%</span> </li>
+                      <li class="price">6.990.000<sup>đ</sup> </li>
+                      <li>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star "></i>
+                      </li>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide-items ">
+                  <img src="./img/anh31.jpg" alt="">
+                  <div class="swiper-text">
+                      <li class="swiper-text-title" >Tai nghe Bluetooth True Wireless Samsung Galaxy Buds+ R175 </li>
+                      <li class="swiper-text-title-one">Giảm sốc </li>
+                      <li><a href="#" class="price-old-black">2.140.000<sup>đ</sup></a> <span>-7%</span> </li>
+                      <li class="price">1.712.000<sup>đ</sup> </li>
+                      <li>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star "></i>
+                      </li>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide-items ">
+                  <img src="./img/anh32.jpg" alt="">
+                  <div class="swiper-text">
+                      <li class="swiper-text-title" >Tai nghe Bluetooth True Wireless Earphones 2 Xiaomi ZBW4493GL Trắng </li>
+                      <li class="swiper-text-title-one">Giảm sốc  </li>
+                      <li><a href="#" class="price-old-black">2.590.000<sup>đ</sup></a> <span>-28%</span> </li>
+                      <li class="price">1.864.000<sup>đ</sup> </li>
+                      <li>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star"></i>
+                      </li>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide-items ">
+                  <img src="./img/anh39.jpg" alt="">
+                  <div class="swiper-text">
+                      <li class="swiper-text-title" >Pin sạc dự phòng Polymer 20.000 mAh Type C PD QC3.0 Xmobile PowerBox P69D</li>
+                      <li class="swiper-text-title-one">Giảm sốc </li>
+                      <li><a href="#" class="price-old-black">1.050.000<sup>đ</sup></a> <span>-50%</span> </li>
+                      <li class="price">525.000<sup>đ</sup> </li>
+                      <li>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star "></i>
+                      </li>
+                  </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
         </div>
       </div>
     </section>
     <!-- Product-galery -->
     <section class="product-gallery-one">
-      <div class="container">
+      <div class="container ">
         <div class="product-gallery-one-content">
           <div class="product-gallery-one-content-title">
             <h2>ĐIỆN THOẠI NỔI BẬT NHẤT </h2>
@@ -522,7 +888,7 @@
                   <div class="product-gallery-one-content-product-item-text">
                       <li><img src="./img/logo.gif" alt=""><p>Đặt hàng trước </p></li>
                       <li>Samsung Galaxy Z Fold3 5G 512GB </li>
-                      <li>Hàn sắp về  </li>
+                      <li>Hàng sắp về  </li>
                       <li><a href="#">44.990.000<sup>đ</sup></a> <span>-6%</span> </li>
                       <li>43.990.000 <sup>đ</sup> </li>
                       <li>
@@ -619,7 +985,7 @@
                       </li>
                   </div>
             </div>
-            <div class="product-gallery-one-content-product-item">
+            <div class="product-gallery-one-content-product-item hide-on-mobile ">
               <img src="./img/product7.jpg" alt="">
                   <div class="product-gallery-one-content-product-item-text">
                       <li><img src="./img/logo.gif" alt=""><p>Hàng limited   </p></li>
@@ -636,7 +1002,7 @@
                       </li>
                   </div>
             </div>
-            <div class="product-gallery-one-content-product-item">
+            <div class="product-gallery-one-content-product-item hide-on-mobile">
               <img src="./img/product8.jpg" alt="">
                   <div class="product-gallery-one-content-product-item-text">
                       <li><img src="./img/logo.gif" alt=""><p>Giảm giá siêu sốc  </p></li>
@@ -653,7 +1019,7 @@
                       </li>
                   </div>
             </div>
-            <div class="product-gallery-one-content-product-item">
+            <div class="product-gallery-one-content-product-item hide-on-mobile">
               <img src="./img/product9.jpg" alt="">
                   <div class="product-gallery-one-content-product-item-text">
                       <li><img src="./img/logo.gif" alt=""><p>Giảm giá cực sốc  </p></li>
@@ -670,7 +1036,7 @@
                       </li>
                   </div>
             </div>
-            <div class="product-gallery-one-content-product-item">
+            <div class="product-gallery-one-content-product-item hide-on-mobile">
               <img src="./img/product1.jpg" alt="">
                   <div class="product-gallery-one-content-product-item-text">
                       <li><img src="./img/logo.gif" alt=""><p>Giảm giá cực sốc  </p></li>
@@ -688,6 +1054,9 @@
                   </div>
             </div>
           </div>
+          <a href="#" class="readmore-btn">
+            <span>Xem tất cả <b>183</b> Điện thoại </span>
+          </a>
         </div>
       </div>
     </section>
@@ -695,7 +1064,7 @@
     <!-- Product-galery-three -->
 
     <section class="product-gallery-three">
-      <div class="container">
+      <div class="container ">
         <div class="product-gallery-three-content">
           <div class="product-gallery-three-content-title">
             <h2>LAPTOP,TABLET NỔI BẬT NHẤT  </h2>
@@ -714,7 +1083,7 @@
                         <div class="product-gallery-three-content-product-item-text">
                             <li><img src="./img/logo.gif" alt=""><p>Ưu đãi x3 HSSV</p></li>
                             <li>Acer Nitro 5 Gaming AN515 57 727J i7 11800H (NH.QD9SV.005.) </li>
-                            <li><span class="content-lap">Ram 8G </span  >  <span class="content-lap">SSD 512GB</span> </li>
+                            <li>Online giá rẻ </li>
                             <li><a href="#">29.990.000<sup>đ</sup></a> <span>-7%</span> </li>
                             <li>28.990.000₫ <sup>đ</sup> </li>
                             <li>
@@ -890,13 +1259,125 @@
               </div>
             </div>
 
+            <!-- product-gallery-three-mobile -->
+            <div class="product-gallery-three-mobile">
+              <div class="container">
+                <div class="product-gallery-three-items">
+                  <div class="product-gallery-three-mobile-container">
+                    <img src="./img/anh15.jpg" alt="">
+                    <div class="product-gallery-three-mobile-text">
+                      <li class="product-gallery-three-mobile-text-title" >Acer Nitro 5 Gaming AN515 57 727J i7 11800H (NH.QD9SV.005.)</li>
+                      <li class="product-gallery-three-mobile-text-title-one">Online giá rẻ </li>
+                      <li><a href="#" class="price-old-black">29.990.000<sup>đ</sup></a> <span>-5%</span> </li>
+                      <li class="price">29.690.000<sup>đ</sup> </li>
+                      <li>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star "></i>
+                      </li>
+                    </div>
+                  </div>
+                  <div class="product-gallery-three-mobile-container">
+                    <img src="./img/anh16.jpg" alt="">
+                    <div class="product-gallery-three-mobile-text">
+                      <li class="product-gallery-three-mobile-text-title" >MSI Gaming GF65 Thin 10UE i5 10500H (286VN)</li>
+                      <li class="product-gallery-three-mobile-text-title-one">Giảm X3 HSSV </li>
+                      <li><a href="#" class="price-old-black">29.490.000<sup>đ</sup></a> <span>-20%</span> </li>
+                      <li class="price">25.490.000<sup>đ</sup> </li>
+                      <li>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate "></i>
+                      </li>
+                    </div>
+                  </div>
+                  <div class="product-gallery-three-mobile-container">
+                    <img src="./img/anh17.jpg" alt="">
+                    <div class="product-gallery-three-mobile-text">
+                      <li class="product-gallery-three-mobile-text-title" >MacBook Pro M1 2020</li>
+                      <li class="product-gallery-three-mobile-text-title-one">Online giá rẻ </li>
+                      <li><a href="#" class="price-old-black">44.990.000<sup>đ</sup></a> <span>-10%</span> </li>
+                      <li class="price">42.990.000₫<sup>đ</sup> </li>
+                      <li>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                      </li>
+                    </div>
+                  </div>
+                  <div class="product-gallery-three-mobile-container">
+                    <img src="./img/anh25.jpg" alt="">
+                    <div class="product-gallery-three-mobile-text">
+                      <li class="product-gallery-three-mobile-text-title" >Acer Nitro 5 Gaming AN515 57 5831 i5 11400H (NH.QDGSV.003)</li>
+                      <li class="product-gallery-three-mobile-text-title-one">Ưu đãi X3 HSSV </li>
+                      <li><a href="#" class="price-old-black">32.990.000<sup>đ</sup></a> <span>-10%</span> </li>
+                      <li class="price">32.790.000<sup>đ</sup> </li>
+                      <li>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star "></i>
+                      </li>
+                    </div>
+                  </div>
+                  <div class="product-gallery-three-mobile-container">
+                    <img src="./img/anh24.jpg" alt="">
+                    <div class="product-gallery-three-mobile-text">
+                      <li class="product-gallery-three-mobile-text-title" >Samsung Galaxy Tab S7 FE</li>
+                      <li class="product-gallery-three-mobile-text-title-one">Giảm sốc </li>
+                      <li><a href="#" class="price-old-black">13.990.000<sup>đ</sup></a> <span>-6%</span> </li>
+                      <li class="price">11.990.000<sup>đ</sup> </li>
+                      <li>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star "></i>
+                      </li>
+                    </div>
+                  </div>
+                  <div class="product-gallery-three-mobile-container">
+                    <img src="./img/anh29.jpg" alt="">
+                    <div class="product-gallery-three-mobile-text">
+                      <li class="product-gallery-three-mobile-text-title" >Huawei MatePad 11</li>
+                      <li class="product-gallery-three-mobile-text-title-one">Giảm sốc </li>
+                      <li><a href="#" class="price-old-black">13.990.000<sup>đ</sup></a> <span>-6%</span> </li>
+                      <li class="price">11.990.000<sup>đ</sup> </li>
+                      <li>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                        <i class="fas fa-star icon-star-rate"></i>
+                      </li>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="box-common-listbtn">
+                  <a href="#" class="readmore-btn-laptop ">
+                    <span>Xem tất cả <b>166</b> Laptop</span>
+                  </a>
+                  <a href="#" class="readmore-btn-tablet ">
+                    <span>Xem tất cả <b>39</b> Tablet</span>
+                  </a>
+                </div>
+              </div>
+            </div>
         </div>
       </div>
     </section>
 
     <!-- Product-galery-four -->
     <section class="product-gallery-four">
-      <div class="container">
+      <div class="container ">
         <div class="product-gallery-four-content">
           <div class="product-gallery-four-content-title">
             <h2>PHỤ KIỆN NỔI BẬT NHẤT  </h2>
@@ -1095,12 +1576,119 @@
           </div>
         </div>
 
+        <!-- product-gallery-four-mobile -->
+        <div class="product-gallery-four-mobile">
+          <div class="container">
+            <div class="product-gallery-four-items">
+              <div class="product-gallery-four-mobile-container">
+                <img src="./img/anh36.jpg" alt="">
+                <div class="product-gallery-four-mobile-text">
+                  <li class="product-gallery-four-mobile-text-title" >Pin sạc dự phòng Polymer 15.000 mAh Type C PD QC3.0 Xmobile PowerBox P72D</li>
+                  <li class="product-gallery-four-mobile-text-title-one">Online giá rẻ </li>
+                  <li><a href="#" class="price-old-black">900.000<sup>đ</sup></a> <span>-30%</span> </li>
+                  <li class="price">630.000<sup>đ</sup> </li>
+                  <li>
+                    <i class="fas fa-star icon-star-rate"></i>
+                    <i class="fas fa-star icon-star-rate"></i>
+                    <i class="fas fa-star icon-star-rate"></i>
+                    <i class="fas fa-star icon-star-rate"></i>
+                    <i class="fas fa-star "></i>
+                  </li>
+                </div>
+              </div>
+              <div class="product-gallery-four-mobile-container">
+                <img src="./img/anh38.jpg" alt="">
+                <div class="product-gallery-four-mobile-text">
+                  <li class="product-gallery-four-mobile-text-title" >Pin sạc dự phòng Polymer 10.000 mAh Type C PD QC3.0 OPPO PBT02</li>
+                  <li class="product-gallery-four-mobile-text-title-one">Online giá rẻ </li>
+                  <li><a href="#" class="price-old-black">980.000<sup>đ</sup></a> <span>-40%</span> </li>
+                  <li class="price">588.000<sup>đ</sup> </li>
+                  <li>
+                    <i class="fas fa-star icon-star-rate"></i>
+                    <i class="fas fa-star icon-star-rate"></i>
+                    <i class="fas fa-star icon-star-rate"></i>
+                    <i class="fas fa-star icon-star-rate"></i>
+                    <i class="fas fa-star icon-star-rate"></i>
+                  </li>
+                </div>
+              </div>
+              <div class="product-gallery-four-mobile-container">
+                <img src="./img/anh32.jpg" alt="">
+                <div class="product-gallery-four-mobile-text">
+                  <li class="product-gallery-four-mobile-text-title" >Tai nghe Bluetooth AirPods 2 Apple MV7N2</li>
+                  <li class="product-gallery-four-mobile-text-title-one">Online giá rẻ </li>
+                  <li><a href="#" class="price-old-black">4.390.000<sup>đ</sup></a> <span>-20%</span> </li>
+                  <li class="price">3.470.000<sup>đ</sup> </li>
+                  <li>
+                    <i class="fas fa-star icon-star-rate"></i>
+                    <i class="fas fa-star icon-star-rate"></i>
+                    <i class="fas fa-star icon-star-rate"></i>
+                    <i class="fas fa-star icon-star-rate"></i>
+                    <i class="fas fa-star "></i>
+                  </li>
+                </div>
+              </div>
+              <div class="product-gallery-four-mobile-container">
+                <img src="./img/anh33.jpg" alt="">
+                <div class="product-gallery-four-mobile-text">
+                  <li class="product-gallery-four-mobile-text-title" >Tai nghe Bluetooth AirPods Pro Wireless Charge Apple MWP22</li>
+                  <li class="product-gallery-four-mobile-text-title-one">Online giá rẻ </li>
+                  <li><a href="#" class="price-old-black">6.790.000<sup>đ</sup></a> <span>-22%</span> </li>
+                  <li class="price">5.250.000<sup>đ</sup> </li>
+                  <li>
+                    <i class="fas fa-star icon-star-rate"></i>
+                    <i class="fas fa-star icon-star-rate"></i>
+                    <i class="fas fa-star icon-star-rate"></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                  </li>
+                </div>
+              </div>
+              <div class="product-gallery-four-mobile-container">
+                <img src="./img/anh31.jpg" alt="">
+                <div class="product-gallery-four-mobile-text">
+                  <li class="product-gallery-four-mobile-text-title" >Tai nghe Bluetooth True Wireless Earphones 2 Xiaomi ZBW4493GL Trắng</li>
+                  <li class="product-gallery-four-mobile-text-title-one">Online giá rẻ </li>
+                  <li><a href="#" class="price-old-black">2.590.000<sup>đ</sup></a> <span>-30%</span> </li>
+                  <li class="price">1.813.000<sup>đ</sup> </li>
+                  <li>
+                    <i class="fas fa-star icon-star-rate"></i>
+                    <i class="fas fa-star icon-star-rate"></i>
+                    <i class="fas fa-star icon-star-rate"></i>
+                    <i class="fas fa-star icon-star-rate"></i>
+                    <i class="fas fa-star "></i>
+                  </li>
+                </div>
+              </div>
+                  <div class="product-gallery-four-mobile-container">
+                <img src="./img/anh35.jpg" alt="">
+                <div class="product-gallery-four-mobile-text">
+                  <li class="product-gallery-four-mobile-text-title" >Tai nghe Bluetooth True Wireless Hydrus TS12BC</li>
+                  <li class="product-gallery-four-mobile-text-title-one">Chỉ bán online </li>
+                  <li><a href="#" class="price-old-black">550.000<sup>đ</sup></a> <span>-40%</span> </li>
+                  <li class="price">330.000<sup>đ</sup> </li>
+                  <li>
+                    <i class="fas fa-star icon-star-rate"></i>
+                    <i class="fas fa-star icon-star-rate"></i>
+                    <i class="fas fa-star icon-star-rate"></i>
+                    <i class="fas fa-star icon-star-rate"></i>
+                    <i class="fas fa-star  icon-star-rate"></i>
+                  </li>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <a href="#" class="readmore-btn">
+            <span>Xem tất cả <b>2891</b> Phụ kiện  </span>
+          </a>
+        </div>
       </div>
     </section>
 
     <!-- Product-galery-two -->
     <section class="product-gallery-two">
-      <div class="container">
+      <div class="container ">
         <div class="product-gallery-two-content">
           <div class="product-gallery-two-content-right">
             <img src="./img/slide6.png" alt="">
@@ -1271,10 +1859,532 @@
         </div>
       </div>
     </section>
+    <!-- watch-mobile -->
+    <section class="watch-mobile">
+      <div class="container">
+        <div class="watch-top">
+          <img src="./img/slide10.png" alt="">
+        </div>
+
+        <div class="watch-bottom">
+          <ul class="watch-tab">
+            <li class="watch-tab-items content-select" id="content1" onclick = "display_child1()" >Đồng hồ <br>Thông minh</li>
+            <li class="watch-tab-items content-select" id="content2" onclick = "display_child2()">Đồng hồ <br> Nam</li>
+            <li class="watch-tab-items content-select" id="content3" onclick = "display_child3()">Đồng hồ <br> Nữ</li>
+            <li class="watch-tab-items content-select" id="content4"  onclick = "display_child4()">Định vị <br> trẻ em</li>
+          </ul>
+          <div class="watch-content child display " id="child1">
+            <div class="watch-content-items-col-one">
+              <div class="watch-content-items-product">
+                <img src="./img/watch8.jpg" alt="">
+                <div class="watch-icon">
+                  <img src="./img/icon1.png" alt="">
+                  <span>VN PAY giảm 400k</span>
+                </div>
+                <div class="watch-content-items-product-text">
+                  <li class="watch-content-items-product-text-title">
+                    Apple Watch SE 40mm viền nhôm dây cao su
+                  </li>
+                  <li class="watch-content-items-product-text-title-one">
+                    Online giá rẻ
+                  </li>
+                  <li>
+                    <a href="#" class="price-old-black">8.990.000 <sup>đ</sup></a> <span>-3%</span>
+                  </li>
+                  <li class="price">8.450.000 <sup>đ</sup></li>
+                </div>
+              </div>
+              <div class="watch-content-items-product">
+                <img src="./img/watch1.jpg" alt="">
+                <div class="watch-icon">
+                  <img src="./img/icon2.png" alt="">
+                  <span>VN PAY giảm 300k</span>
+                </div>
+                <div class="watch-content-items-product-text">
+                  <li class="watch-content-items-product-text-title">
+                    Samsung Galaxy Watch 4 LTE Classic 46mm
+                  </li>
+                  <li class="watch-content-items-product-text-title-one">
+                    Online giá rẻ
+                  </li>
+                  <li>
+                    <a href="#" class="price-old-black">9.990.000 <sup>đ</sup></a> <span>-3%</span>
+                  </li>
+                  <li class="price">8.990.000<sup>đ</sup></li>
+                </div>
+              </div>
+              <div class="watch-content-items-product">
+                <img src="./img/watch2.jpg" alt="">
+                <!-- <div class="watch-icon">
+                  <img src="./img/icon1.png" alt="">
+                  <span>VN PAY giảm 400k</span>
+                </div> -->
+                <div class="watch-content-items-product-text">
+                  <li class="watch-content-items-product-text-title">
+                    Vòng đeo tay thông minh Mi Band 6
+                  </li>
+                  <li class="watch-content-items-product-text-title-one">
+                    Online giá rẻ
+                  </li>
+                  <li>
+                    <a href="#" class="price-old-black">1.290.000  <sup>đ</sup></a> <span>-23%</span>
+                  </li>
+                  <li class="price">990.000 <sup>đ</sup></li>
+                </div>
+              </div>
+              <div class="watch-content-items-product">
+                <img src="./img/watch3.jpg" alt="">
+                <div class="watch-icon">
+                  <img src="./img/icon2.png" alt="">
+                  <span>HOTSALE giảm sốc </span>
+                </div>
+                <div class="watch-content-items-product-text">
+                  <li class="watch-content-items-product-text-title">
+                    Samsung Galaxy Watch 3 41mm viền thép bạc dây da
+                  </li>
+                  <li class="watch-content-items-product-text-title-one">
+                    Online giá rẻ
+                  </li>
+                  <li>
+                    <a href="#" class="price-old-black">9.490.000 <sup>đ</sup></a> <span>-52%</span>
+                  </li>
+                  <li class="price">4.490.000 <sup>đ</sup></li>
+                </div>
+              </div>
+              <div class="watch-content-items-product">
+                <img src="./img/watch4.jpg" alt="">
+                <div class="watch-icon">
+                  <img src="./img/icon3.png" alt="">
+                  <span>Tặng quà xịn </span>
+                </div>
+                <div class="watch-content-items-product-text">
+                  <li class="watch-content-items-product-text-title">
+                    Đồng hồ thông minh Garmin Venu SQ dây silicone trắng
+                  </li>
+                  <li class="watch-content-items-product-text-title-one">
+                    Trợ giá online
+                  </li>
+                  <li>
+                    <a href="#" class="price-old-black">4.990.000 <sup>đ</sup></a> <span>-23%</span>
+                  </li>
+                  <li class="price">3.990.000 <sup>đ</sup></li>
+                </div>
+              </div>
+              <div class="watch-content-items-product">
+                <img src="./img/watch5.jpg" alt="">
+                <!-- <div class="watch-icon">
+                  <img src="./img/icon1.png" alt="">
+                  <span>VN PAY giảm 400k</span>
+                </div> -->
+                <div class="watch-content-items-product-text">
+                  <li class="watch-content-items-product-text-title">
+                    Đồng hồ thông minh BeU B2 Đen
+                  </li>
+                  <li class="watch-content-items-product-text-title-one">
+                    Giảm giá sốc
+                  </li>
+                  <li>
+                    <a href="#" class="price-old-black">552.000 <sup>đ</sup></a> <span>-6%</span>
+                  </li>
+                  <li class="price">452.000 <sup>đ</sup></li>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="watch-btn">
+              <a href="#" class="watch-btn-box">
+                <span>Xem tất cả <b>134</b> Đồng hồ thông minh </span>
+              </a>
+            </div>
+
+          </div>
+          <div class="watch-content chlid " id="child2">
+            <div class="watch-content-items-col-one">
+              <div class="watch-content-items-product">
+                <img src="./img/watch9.png" alt="">
+                <!-- <div class="watch-icon">
+                  <img src="./img/icon1.png" alt="">
+                  <span>VN PAY giảm 400k</span>
+                </div> -->
+                <div class="watch-content-items-product-text">
+                  <li class="watch-content-items-product-text-title">
+                    FOSSIL 44 mm Nam FS5638
+                  </li>
+                  <li class="watch-content-items-product-text-title-one">
+                    Online giá rẻ
+                  </li>
+                  <li>
+                    <a href="#" class="price-old-black">3.480.000 <sup>đ</sup></a> <span>-25%</span>
+                  </li>
+                  <li class="price">2.610.000 <sup>đ</sup></li>
+                </div>
+              </div>
+              <div class="watch-content-items-product">
+                <img src="./img/watch10.jpg" alt="">
+                <!-- <div class="watch-icon">
+                  <img src="./img/icon1.png" alt="">
+                  <span>VN PAY giảm 400k</span>
+                </div> -->
+                <div class="watch-content-items-product-text">
+                  <li class="watch-content-items-product-text-title">
+                    Tommy Hilfiger 1791740 - Nam
+                  </li>
+                  <li class="watch-content-items-product-text-title-one">
+                    Online giá rẻ
+                  </li>
+                  <li>
+                    <a href="#" class="price-old-black">3.900.000 <sup>đ</sup></a> <span>-25%</span>
+                  </li>
+                  <li class="price">2.925.000<sup>đ</sup></li>
+                </div>
+              </div>
+              <div class="watch-content-items-product">
+                <img src="./img/watch11.jpg" alt="">
+                <!-- <div class="watch-icon">
+                  <img src="./img/icon1.png" alt="">
+                  <span>VN PAY giảm 400k</span>
+                </div> -->
+                <div class="watch-content-items-product-text">
+                  <li class="watch-content-items-product-text-title">
+                    MVW 43 mm kính sapphire Nam ML050-01
+                  </li>
+                  <li class="watch-content-items-product-text-title-one">
+                    Online giá rẻ
+                  </li>
+                  <li>
+                    <a href="#" class="price-old-black">1.890.000 <sup>đ</sup></a> <span>-25%</span>
+                  </li>
+                  <li class="price">1.417.000<sup>đ</sup></li>
+                </div>
+              </div>
+              <div class="watch-content-items-product">
+                <img src="./img/watch12.jpg" alt="">
+                <!-- <div class="watch-icon">
+                  <img src="./img/icon1.png" alt="">
+                  <span>VN PAY giảm 400k</span>
+                </div> -->
+                <div class="watch-content-items-product-text">
+                  <li class="watch-content-items-product-text-title">
+                    BULOVA 41 mm Automatic Nam 98A187
+                  </li>
+                  <li class="watch-content-items-product-text-title-one">
+                    Online giá rẻ
+                  </li>
+                  <li>
+                    <a href="#" class="price-old-black">9.600.000 <sup>đ</sup></a> <span>-25%</span>
+                  </li>
+                  <li class="price">7.200.000 <sup>đ</sup></li>
+                </div>
+              </div>
+              <div class="watch-content-items-product">
+                <img src="./img/watch13.jpg" alt="">
+                <!-- <div class="watch-icon">
+                  <img src="./img/icon1.png" alt="">
+                  <span>VN PAY giảm 400k</span>
+                </div> -->
+                <div class="watch-content-items-product-text">
+                  <li class="watch-content-items-product-text-title">
+                    COACH 41 mm Nam 14602152
+                  </li>
+                  <li class="watch-content-items-product-text-title-one">
+                    Online giá rẻ
+                  </li>
+                  <li>
+                    <a href="#" class="price-old-black">3.600.000<sup>đ</sup></a> <span>-25%</span>
+                  </li>
+                  <li class="price">2.700.000 <sup>đ</sup></li>
+                </div>
+              </div>
+              <div class="watch-content-items-product">
+                <img src="./img/watch14.jpg" alt="">
+                <!-- <div class="watch-icon">
+                  <img src="./img/icon1.png" alt="">
+                  <span>VN PAY giảm 400k</span>
+                </div> -->
+                <div class="watch-content-items-product-text">
+                  <li class="watch-content-items-product-text-title">
+                    CASIO 33 mm Nam F-91WM-9ADF
+                  </li>
+                  <li class="watch-content-items-product-text-title-one">
+                    Online giá rẻ
+                  </li>
+                  <li>
+                    <a href="#" class="price-old-black">543.000 <sup>đ</sup></a> <span>-25%</span>
+                  </li>
+                  <li class="price">407.000<sup>đ</sup></li>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="watch-btn">
+              <a href="#" class="watch-btn-box">
+                <span>Xem tất cả <b>1800</b> Đồng hồ nam </span>
+              </a>
+            </div>
+
+          </div>
+          <div class="watch-content chlid" id="child3">
+            <div class="watch-content-items-col-one">
+              <div class="watch-content-items-product">
+                <img src="./img/watch15.jpg" alt="">
+                <!-- <div class="watch-icon">
+                  <img src="./img/icon1.png" alt="">
+                  <span>VN PAY giảm 400k</span>
+                </div> -->
+                <div class="watch-content-items-product-text">
+                  <li class="watch-content-items-product-text-title">
+                    CITIZEN 28 mm Nữ EU6073-53A
+                  </li>
+                  <li class="watch-content-items-product-text-title-one">
+                    Online giá rẻ
+                  </li>
+                  <li>
+                    <a href="#" class="price-old-black">4.200.000<sup>đ</sup></a> <span>-30%</span>
+                  </li>
+                  <li class="price">2.940.000<sup>đ</sup></li>
+                </div>
+              </div>
+              <div class="watch-content-items-product">
+                <img src="./img/watch16.jpg" alt="">
+                <!-- <div class="watch-icon">
+                  <img src="./img/icon1.png" alt="">
+                  <span>VN PAY giảm 400k</span>
+                </div> -->
+                <div class="watch-content-items-product-text">
+                  <li class="watch-content-items-product-text-title">
+                    ELLE 26 mm ODEON Nữ ELL21064
+                  </li>
+                  <li class="watch-content-items-product-text-title-one">
+                    Online giá rẻ
+                  </li>
+                  <li>
+                    <a href="#" class="price-old-black">2.180.000<sup>đ</sup></a> <span>-30%</span>
+                  </li>
+                  <li class="price">1.526.000 <sup>đ</sup></li>
+                </div>
+              </div>
+              <div class="watch-content-items-product">
+                <img src="./img/watch17.jpg" alt="">
+                <!-- <div class="watch-icon">
+                  <img src="./img/icon1.png" alt="">
+                  <span>VN PAY giảm 400k</span>
+                </div> -->
+                <div class="watch-content-items-product-text">
+                  <li class="watch-content-items-product-text-title">
+                    ELLE 34 mm Nữ ELL21030
+                  </li>
+                  <li class="watch-content-items-product-text-title-one">
+                    Online giá rẻ
+                  </li>
+                  <li>
+                    <a href="#" class="price-old-black">2.720.000 <sup>đ</sup></a> <span>-30%</span>
+                  </li>
+                  <li class="price">1.904.000 <sup>đ</sup></li>
+                </div>
+              </div>
+              <div class="watch-content-items-product">
+                <img src="./img/watch18.jpg" alt="">
+                <!-- <div class="watch-icon">
+                  <img src="./img/icon1.png" alt="">
+                  <span>VN PAY giảm 400k</span>
+                </div> -->
+                <div class="watch-content-items-product-text">
+                  <li class="watch-content-items-product-text-title">
+                    DKNY 34 mm Nữ NY2947
+                  </li>
+                  <li class="watch-content-items-product-text-title-one">
+                    Online giá rẻ
+                  </li>
+                  <li>
+                    <a href="#" class="price-old-black">4.390.000 <sup>đ</sup></a> <span>-30%</span>
+                  </li>
+                  <li class="price">3.073.000 <sup>đ</sup></li>
+                </div>
+              </div>
+              <div class="watch-content-items-product">
+                <img src="./img/watch19.jpg" alt="">
+                <!-- <div class="watch-icon">
+                  <img src="./img/icon1.png" alt="">
+                  <span>VN PAY giảm 400k</span>
+                </div> -->
+                <div class="watch-content-items-product-text">
+                  <li class="watch-content-items-product-text-title">
+                    LACOSTE 38 mm Nữ 2001005
+                  </li>
+                  <li class="watch-content-items-product-text-title-one">
+                    Online giá rẻ
+                  </li>
+                  <li>
+                    <a href="#" class="price-old-black">4.600.000 <sup>đ</sup></a> <span>-30%</span>
+                  </li>
+                  <li class="price">3.220.000 <sup>đ</sup></li>
+                </div>
+              </div>
+              <div class="watch-content-items-product">
+                <img src="./img/watch20.jpg" alt="">
+                <!-- <div class="watch-icon">
+                  <img src="./img/icon1.png" alt="">
+                  <span>VN PAY giảm 400k</span>
+                </div> -->
+                <div class="watch-content-items-product-text">
+                  <li class="watch-content-items-product-text-title">
+                    LACOSTE 38 mm Nữ 2001087
+                  </li>
+                  <li class="watch-content-items-product-text-title-one">
+                    Online giá rẻ
+                  </li>
+                  <li>
+                    <a href="#" class="price-old-black">5.700.000 <sup>đ</sup></a> <span>-30%</span>
+                  </li>
+                  <li class="price">3.990.000 <sup>đ</sup></li>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="watch-btn">
+              <a href="#" class="watch-btn-box">
+                <span>Xem tất cả <b>2200</b> Đồng hồ nữ </span>
+              </a>
+            </div>
+
+          </div>
+          <div class="watch-content chlid" id="child4">
+            <div class="watch-content-items-col-one">
+              <div class="watch-content-items-product">
+                <img src="./img/watch21.jpg" alt="">
+                <!-- <div class="watch-icon">
+                  <img src="./img/icon1.png" alt="">
+                  <span>VN PAY giảm 400k</span>
+                </div> -->
+                <div class="watch-content-items-product-text">
+                  <li class="watch-content-items-product-text-title">
+                    Đồng hồ định vị trẻ em 4G Kidcare S6 Hồng
+                  </li>
+                  <li class="watch-content-items-product-text-title-one">
+                    Online giá rẻ
+                  </li>
+                  <li>
+                    <a href="#" class="price-old-black">1.990.000<sup>đ</sup></a> <span>-10%</span>
+                  </li>
+                  <li class="price">1.791.000₫<sup>đ</sup></li>
+                </div>
+              </div>
+              <div class="watch-content-items-product">
+                <img src="./img/watch22.jpg" alt="">
+                <!-- <div class="watch-icon">
+                  <img src="./img/icon1.png" alt="">
+                  <span>VN PAY giảm 400k</span>
+                </div> -->
+                <div class="watch-content-items-product-text">
+                  <li class="watch-content-items-product-text-title">
+                    Đồng hồ định vị trẻ em 4G Kidcare S8 Đen
+                  </li>
+                  <li class="watch-content-items-product-text-title-one">
+                    Online giá rẻ
+                  </li>
+                  <li>
+                    <a href="#" class="price-old-black">2.490.000<sup>đ</sup></a> <span>-10%</span>
+                  </li>
+                  <li class="price">2.241.000 <sup>đ</sup></li>
+                </div>
+              </div>
+              <div class="watch-content-items-product">
+                <img src="./img/watch23.jpg" alt="">
+                <!-- <div class="watch-icon">
+                  <img src="./img/icon1.png" alt="">
+                  <span>VN PAY giảm 400k</span>
+                </div> -->
+                <div class="watch-content-items-product-text">
+                  <li class="watch-content-items-product-text-title">
+                    Đồng hồ định vị trẻ em Kidcare 08S
+                  </li>
+                  <li class="watch-content-items-product-text-title-one">
+                    Online giá rẻ
+                  </li>
+                  <li>
+                    <a href="#" class="price-old-black">1.390.000<sup>đ</sup></a> <span>-10%</span>
+                  </li>
+                  <li class="price">1.251.000 <sup>đ</sup></li>
+                </div>
+              </div>
+              <div class="watch-content-items-product">
+                <img src="./img/watch24.jpg" alt="">
+                <!-- <div class="watch-icon">
+                  <img src="./img/icon1.png" alt="">
+                  <span>VN PAY giảm 400k</span>
+                </div> -->
+                <div class="watch-content-items-product-text">
+                  <li class="watch-content-items-product-text-title">
+                    Đồng hồ định vị trẻ em 4G Abardeen T3 Hồng
+                  </li>
+                  <li class="watch-content-items-product-text-title-one">
+                    Online giá rẻ
+                  </li>
+                  <li>
+                    <a href="#" class="price-old-black">2.690.000₫ <sup>đ</sup></a> <span>-10%</span>
+                  </li>
+                  <li class="price">2.421.000<sup>đ</sup></li>
+                </div>
+              </div>
+              <div class="watch-content-items-product">
+                <img src="./img/watch25.jpg" alt="">
+                <!-- <div class="watch-icon">
+                  <img src="./img/icon1.png" alt="">
+                  <span>VN PAY giảm 400k</span>
+                </div> -->
+                <div class="watch-content-items-product-text">
+                  <li class="watch-content-items-product-text-title">
+                    Đồng hồ định vị trẻ em Masstel Super Hero 4G
+                  </li>
+                  <li class="watch-content-items-product-text-title-one">
+                    Online giá rẻ
+                  </li>
+                  <li>
+                    <a href="#" class="price-old-black">2.490.000<sup>đ</sup></a> <span>-20%</span>
+                  </li>
+                  <li class="price">1.992.000<sup>đ</sup></li>
+                </div>
+              </div>
+              <div class="watch-content-items-product">
+                <img src="./img/watch26.jpg" alt="">
+                <!-- <div class="watch-icon">
+                  <img src="./img/icon1.png" alt="">
+                  <span>VN PAY giảm 400k</span>
+                </div> -->
+                <div class="watch-content-items-product-text">
+                  <li class="watch-content-items-product-text-title">
+                    Đồng hồ định vị trẻ em Masstel Smart Hero 4G
+                  </li>
+                  <li class="watch-content-items-product-text-title-one">
+                    Online giá rẻ
+                  </li>
+                  <li>
+                    <a href="#" class="price-old-black">1.990.000 <sup>đ</sup></a> <span>-20%</span>
+                  </li>
+                  <li class="price">1.592.000₫<sup>đ</sup></li>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="watch-btn">
+              <a href="#" class="watch-btn-box">
+                <span>Xem tất cả <b>18</b> Định vị trẻ em </span>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Slider-one -->
     <section class="slider-one">
-      <div class="container">
-        <h2 class="slider-one-title">CHUYÊN TRANG THUƠNG HIỆU  </h2>
+      <div class="container ">
+        <h2 class="slider-one-title">CHUYÊN TRANG THƯƠNG HIỆU  </h2>
         <div class="slider-one-container">
           <div class="slider-one-content">
             <div class="slider-one-content-item">
@@ -1291,9 +2401,10 @@
         </div>
       </div>
     </section>
+
     <!-- Application -->
 
-      <div class="container">
+      <div class="container ">
         <section class="application">
           <div class="application-col-1">
             <div class="application-title">
@@ -1377,7 +2488,7 @@
                 <div class="application-col-2-img-list">
                   <div class="application-col-2-img-lists">
                     <a href="#" class="application-col-2-img-list-text">Cách chuyển tài khoản GoViet sang GoJek để nhận khuyến mãi 1 phần nước</a>
-                    <a href="#" class="application-col-2-img-list-text">Hướng dẫn đặt xe , đồ ăn trên ứng dụng GoViet</a>
+                    <a href="#" class="application-col-2-img-list-text">Cách chuyển tài khoản GoViet sang GoJek để nhận khuyến mãi 1 phần nước</a>
                   </div>
                 </div>
 
@@ -1443,12 +2554,145 @@
 
       </div>
 
+      <!-- Application-mobile -->
+      <div class="application-mobile">
+        <div class="col-one-mobile">
+          <div class="col-one-mobile-title">
+            <h2>24H Công nghệ </h2>
+            <a href="#" class="col-one-mobile-title-link">Xem thêm </a>
+          </div>
+          <div class="swiper mySwiper-one">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide swiper-slide-img">
+                <img src="./img/anh41.jpg" alt="">
+                <div class="swiper-slide-content">
+                  <p class="swiper-slide-content-title">
+                    3 cách sử dụng OPPO A16, khai thác chiếc điện thoại để bạn có thể tự do làm việc, giải trí và vui chơi
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide-img">
+                <img src="./img/anh42.png" alt="">
+                <div class="swiper-slide-content">
+                  <p class="swiper-slide-content-title">
+                    Có nên chờ mua Redmi K50 series với hàng loạt nâng cấp cực HOT về cấu hình, hứa hẹn phá đảo phân khúc giá trong thời gian tới?
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide-img">
+                <img src="./img/anh43.jpg" alt="">
+                <div class="swiper-slide-content">
+                  <p class="swiper-slide-content-title">
+                    Hubsan Zino Mini ra mắt: Flycam 4K nhỏ gọn có thể bay 10km, hỗ trợ chế độ ghi hình trong đêm kèm giá tốt
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide-img">
+                <img src="./img/anh44.jpg" alt="">
+                <div class="swiper-slide-content">
+                  <p class="swiper-slide-content-title">
+                    Xiaomi 12 Pro lộ ảnh render mặt trước: Màn hình cong, viền màn hình của máy khá mỏng, có camera đục lỗ
+                </div>
+              </div>
+
+
+            </div>
+
+        </div>
+
+      </div>
+
+      <div class="col-two-mobile">
+        <div class="col-one-mobile-title">
+          <h2 class="col-two-mobile-title">Game-Ứng dụng nổi bật</h2>
+          <a href="#" class="col-two-mobile-title-link">Xem thêm </a>
+        </div>
+
+        <div class="swiper mySwiper-two">
+          <div class="swiper-wrapper swiper-wrapper-container-two">
+            <div class="swiper-slide swiper-slide-img-two">
+              <img src="./img/anh46.jpg" alt="">
+              <div class="swiper-slide-text-two">
+                <div class="swiper-slide-text-two-img">
+                  <img src="./img/logo3.png" alt="">
+                </div>
+                <div class="swiper-slide-text-two-content">
+                  <h4>GoViet - Ứng dụng đặt xe, giao hàng nhanh</h4>
+                  <div class="swiper-slide-text-two-content-free">
+                    <span>Miễn phí </span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide-text-two-title">
+                <a href="#">Cách chuyển tài khoản GoViet sang GoJek để nhận khuyến mãi 1 phần nước</a>
+                <a href="#">Hướng dẫn đặt xe , đồ ăn trên ứng dụng GoViet</a>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide-img-two">
+              <img src="./img/anh47.jpg" alt="">
+              <div class="swiper-slide-text-two">
+                <div class="swiper-slide-text-two-img">
+                  <img src="./img/lgo4.png" alt="">
+                </div>
+                <div class="swiper-slide-text-two-content">
+                  <h4>ZOOM Cloud Meetings - Tạo cuộc họp, học online</h4>
+                  <div class="swiper-slide-text-two-content-free">
+                    <span>Miễn phí </span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide-text-two-title">
+                <a href="#">Cách chỉnh sửa, xóa tin nhắn trên Zoom trên điện thoại, máy tính</a>
+                <a href="#">2 cách thu nhỏ màn hình Zoom trên máy tính, điện thoại cực dễ</a>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide-img-two">
+              <img src="./img/anh48.jpg" alt="">
+              <div class="swiper-slide-text-two">
+                <div class="swiper-slide-text-two-img">
+                  <img src="./img/logo5.jpg" alt="">
+                </div>
+                <div class="swiper-slide-text-two-content">
+                  <h4>NhacCuaTui: Một trong những ứng dụng nghe nhạc mp3 hàng đầu</h4>
+                  <div class="swiper-slide-text-two-content-free">
+                    <span>Miễn phí </span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide-text-two-title">
+                <a href="#">TOP 10 trang web nghe nhạc quốc tế hay nhất 2021</a>
+                <a href="#">TOP 5 app tải nhạc bản quyền cho iOS tốt nhất hiện nay</a>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide-img-two">
+              <img src="./img/anh53.jpg" alt="">
+              <div class="swiper-slide-text-two">
+                <div class="swiper-slide-text-two-img">
+                  <img src="./img/logo6.jpg" alt="">
+                </div>
+                <div class="swiper-slide-text-two-content">
+                  <h4>PicsArt: Ứng dụng tạo ảnh ghép & chỉnh sửa ảnh chuyên nghiệp</h4>
+                  <div class="swiper-slide-text-two-content-free">
+                    <span>Miễn phí </span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide-text-two-title">
+                <a href="#">Cách cắt ảnh thành hình tròn bằng PicsArt cực đơn giản, chi tiết</a>
+                <a href="#">Cách chỉnh màu lá cây đỏ bằng PicsArt nhanh, đơn giản, chi tiết</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+      </div>
+      </div>
+      </div>
     <!-- Footer -->
     <footer>
       <section class="footer-top">
-        <div class="container">
+        <div class="container ">
 
-          <div class="footer-col">
+          <div class="footer-col hide-on-mobile">
             <ul class="footer-menu footer-menu-items">
               <li>Lịch sử mua hàng </li>
               <li>Cộng tác bán cùng TGDĐ</li>
@@ -1457,7 +2701,7 @@
               <li>Xem thêm </li>
             </ul>
           </div>
-          <div class="footer-col">
+          <div class="footer-col hide-on-mobile ">
             <ul class="footer-menu footer-menu-items">
               <li>Giới thiệu công ty (MWG.vn)</li>
               <li>Tuyển dụng</li>
@@ -1466,8 +2710,8 @@
               <li>Xem bản mobile  </li>
             </ul>
           </div>
-          <div class="footer-col">
-            <ul class="footer-menu">
+          <div class="footer-col footer-col-mobile">
+            <ul class="footer-menu mobile-border">
               <li><strong>Tổng đài hỗ trợ (miễn phí gọi)</strong>  </li>
               <li>Gọi mua : <a href="#" style="color: #2589ff; font-size: 16px;">1800.1060</a> (7:30 - 22:30)</li>
               <li>Kỹ thuật  : <a href="#" style="color: #2589ff;font-size: 16px;">1800.1763</a> (7:30 - 22:30)</li>
@@ -1475,12 +2719,12 @@
               <li>Bảo hành : <a href="#"style="color: #2589ff;font-size: 16px;">1800.1064</a> (8:00 -22:00)</li>
             </ul>
           </div>
-          <div class="footer-col">
-            <ul class="footer-menu">
-              <li><a href="#" style="color: #2589ff; font-size: 16px;"><i class="fab fa-facebook"></i> 3770.8k Fan</a>
+          <div class="footer-col footer-col-mobile">
+            <ul class="footer-menu ">
+              <li class="border-active "><a href="#" style="color: #2589ff; font-size: 16px;"><i class="fab fa-facebook"></i> 3770.8k Fan</a>
                 <a href="#" style="color: #2589ff; font-size: 16px;"><i class="fab fa-youtube icon-youtube"></i>  822k Đăng ký</a>
               </li>
-              <li><a href="#"><img src="./img/footer-img.png" alt="" class="footer-img"></a>
+              <li class="border-active "><a href="#"><img src="./img/footer-img.png" alt="" class="footer-img"></a>
                 <a href="#"><img src="./img/footer-img1.png" alt=""  class="footer-img"></a>
                 <a href="#"><img src="./img/footer-img2.png" alt=""  class="footer-img"></a>
               </li>
@@ -1510,8 +2754,8 @@
 
     </footer>
 
-
-
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./swiper.js"></script>
   <script src="./main.js"></script>
 </body>
 </html>
