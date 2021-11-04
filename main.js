@@ -187,28 +187,48 @@ const child1 = document.getElementById("child1");
 const child2 = document.getElementById("child2");
 const child3 = document.getElementById("child3");
 const child4 = document.getElementById("child4");
+const content1 = document.getElementById("content1");
+const content2 = document.getElementById("content2");
+const content3 = document.getElementById("content3");
+const content4 = document.getElementById("content4");
 function display_child2() {
   child1.classList.remove("display");
   child2.classList.add("display");
   child3.classList.remove("display");
   child4.classList.remove("display");
+  content1.classList.remove("display_tab");
+  content2.classList.add("display_tab");
+  content3.classList.remove("display_tab");
+  content4.classList.remove("display_tab");
 }
 function display_child3() {
   child2.classList.remove("display");
   child3.classList.add("display");
   child1.classList.remove("display");
   child4.classList.remove("display");
+  content1.classList.remove("display_tab");
+  content2.classList.remove("display_tab");
+  content3.classList.add("display_tab");
+  content4.classList.remove("display_tab");
 }
 function display_child4() {
   child3.classList.remove("display");
   child4.classList.add("display");
   child1.classList.remove("display");
   child2.classList.remove("display");
+  content1.classList.remove("display_tab");
+  content2.classList.remove("display_tab");
+  content3.classList.remove("display_tab");
+  content4.classList.add("display_tab");
 }
 function display_child1() {
   child3.classList.remove("display");
   child4.classList.remove("display");
   child1.classList.add("display");
   child2.classList.remove("display");
+  content1.classList.add("display_tab");
+  content2.classList.remove("display_tab");
+  content3.classList.remove("display_tab");
+  content4.classList.remove("display_tab");
 }
 // select

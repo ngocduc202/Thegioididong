@@ -1999,11 +1999,14 @@ footer {
 .display {
   display: block;
 }
-/* .watch-content::before {
+.display_tab {
+  position: relative;
+}
+.display_tab::after {
   content: "";
-  border: 15px solid;
-  border-color: transparent transparent black transparent;
   position: absolute;
-  top: -29px;
-  left: 33px;
-} */
+  border: 15px solid;
+  border-color: transparent transparent white transparent;
+  top: calc(100% - 8px);
+  left: 22px;
+}
