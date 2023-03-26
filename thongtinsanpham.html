@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./img/lgoheader-removebg-preview.png" type="img/gif" sizes="16*16">
+  <link rel="stylesheet" href="./fontawesome-free-5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.google.com/icons?selected=Material%20Icons%20Outlined%3Awatch%3A">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./reponsive.css">
+  <link rel="stylesheet" href="./grid.css">
+  <link rel="stylesheet" href="./thongtinsanpham.css">
+  <link rel="stylesheet" href="./dienthoai.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <title>Thế giới di động</title>
+</head>
+
+<body>
+  <header>
+    <img src="./img/slide.png" alt="" class="slider-pc">
+    <img src="./img/slide-mobile.png" alt="" class="slider-mobile">
+  </header>
+  <nav>
+    <div class="container ">
+      <ul>
+        <li><a href=""><img style="width:150px" src="./img/logo1.jpg" alt=""></a></li>
+        <li id="adress-form"><a href="#" class="adress">Thái Bình <i class="fas fa-sort-down"></i> </a> </li>
+        <li><input type="text" placeholder="Tìm kiếm "><i class="fas fa-search"></i></li>
+        <li><a href=""></a><button><i class="fas fa-shopping-cart"></i>Giỏ hàng </button></li>
+        <li><a href="">Lịch sử <br> đơn hàng </a></li>
+        <li><a href=""><span class="btn-content"><span class="btn-top"></span></span> Mua thẻ nạp ngay!</a></li>
+        <li><a href="">24h Công nghệ </a></li>
+        <li><a href="">Đăng Ký </a></li>
+        <li><a href="">Đăng Nhập </a></li>
+        <div class="adress-form">
+          <div class="adress-form-content">
+            <h2>Chọn địa chỉ nhận hàng <span id="adress-close">X Đóng </span> </h2>
+            <form action="">
+              <p>Chọn đầy đủ địa chỉ nhận hàng để biết chính xác thời gian giao </p>
+              <select name="">
+                <option value="#">--Chọn địa điểm </option>
+                <option value="#">Thái Bình </option>
+                <option value="#">Hà Nội </option>
+                <option value="#">TP.HCM </option>
+                <option value="#"> Xem thêm </option>
+              </select>
+              <select name="">
+                <option value="#">--Chọn Quận\Huyện </option>
+                <option value="#">Huyện Đông Hưng </option>
+                <option value="#"> Huyện Hưng Hà </option>
+                <option value="#"> Huyện Kiến Xương </option>
+                <option value="#"> Huyện Quỳnh Phụ </option>
+                <option value="#"> Huyện Thái Thụy </option>
+                <option value="#"> Huyện Tiền Hải </option>
+                <option value="#"> Huyện Vũ Thư </option>
+                <option value="#"> TP.Thái Bình </option>
+              </select>
+              <select name="">
+                <option value="#">--Chọn Phường\Xá </option>
+                <option value="#">Phường Bồ Xuyên </option>
+                <option value="#">Phường Đề Thám </option>
+                <option value="#"> Phường Hoàng Diệu </option>
+                <option value="#">Phường Kỳ Bá </option>
+                <option value="#">Phường Lê Hồng Phong </option>
+                <option value="#"> Phường Quang Trung </option>
+                <option value="#">Phường Trần Lãm </option>
+                <option value="#">Phường Tiền Phong </option>
+                <option value="#">Phường Trần Hưng Đạo </option>
+              </select>
+              <input type="text" placeholder="Số nhà ,Tên đường ">
+              <button>Xác nhận </button>
+            </form>
+          </div>
+        </div>
+      </ul>
+    </div>
+  </nav>
+  <!-- nav-mobile -->
+  <nav class="nav-mobile">
+    <div class="container">
+      <ul>
+        <li><a href="#"><img src="./img/logo-mobile.jpg" alt="" class="logo-mobile"></a></li>
+        <li><input type="text" placeholder="Tìm kiếm "><i class="fas fa-search"></i></li>
+        <li id="adress-form"><a href="#">Thái Bình </a> <i class="fas fa-map-marker-alt"></i> </li>
+        <li>Lịch sử đơn hàng</li>
+        <li><i class="fas fa-shopping-cart"></i></li>
+        <li id="sidebar-menu-open"><i class="fas fa-bars"></i></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="sidebar-menu">
+    <div class="sidebar-menu-content">
+      <li id="sidebar-menu-close"><a href="#" class="sidebar-menu-content-close">X Đóng</a> </li>
+      <div class="sidebar-menu-content-one">
+        <ul>
+          <li class="sidebar-menu-content-one-items"><a href="#" class="sidebar-menu-content-one-links">Điện thoại </a>
+          </li>
+          <li class="sidebar-menu-content-one-items"><a href="#" class="sidebar-menu-content-one-links">Laptop </a></li>
+          <li class="sidebar-menu-content-one-items"><a href="#" class="sidebar-menu-content-one-links">Tablet </a></li>
+          <li class="sidebar-menu-content-one-items"><a href="#" class="sidebar-menu-content-one-links">Phụ kiện </a>
+          </li>
+          <li class="sidebar-menu-content-one-items"><a href="#" class="sidebar-menu-content-one-links">Đồng hồ thời
+              trang </a></li>
+          <li class="sidebar-menu-content-one-items"><a href="#" class="sidebar-menu-content-one-links">Đồng hồ thông
+              minh </a></li>
+          <li class="sidebar-menu-content-one-items"><a href="#" class="sidebar-menu-content-one-links">Máy tính bộ </a>
+          </li>
+          <li class="sidebar-menu-content-one-items"><a href="#" class="sidebar-menu-content-one-links">Màn hình máy
+              tính </a></li>
+          <li class="sidebar-menu-content-one-items"><a href="#" class="sidebar-menu-content-one-links">Máy in </a></li>
+          <li class="sidebar-menu-content-one-items"><a href="#" class="sidebar-menu-content-one-links">Mực in </a></li>
+          <li class="sidebar-menu-content-one-items"><a href="#" class="sidebar-menu-content-one-links">Máy cũ giá rẻ
+            </a></li>
+          <li class="sidebar-menu-content-one-items"><a href="#" class="sidebar-menu-content-one-links">Sim, thẻ cào
+            </a></li>
+          <li class="sidebar-menu-content-one-items"><a href="#" class="sidebar-menu-content-one-links">Trả góp điện
+              nước </a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-menu-content-two">
+        <div class="sidebar-menu-content-two-items">
+          <h3>Nhóm hàng mới </h3>
+          <li>Phụ kiện ô tô</li>
+          <li>Thiết bị nhà thông minh</li>
+          <li>Màn hình máy tính </li>
+          <li>Thẻ cào giảm đến 5%</li>
+        </div>
+        <div class="sidebar-menu-content-two-items">
+          <h3>Thế giới công nghệ </h3>
+          <li>24H Công nghệ </li>
+          <li>Game app </li>
+          <li>Hỏi đáp </li>
+        </div>
+
+      </div>
+      <div class="sidebar-menu-content-three">
+        <li><a href="#">Lịch sử mua hàng </a></li>
+        <li>Tổng đài <a href="#">1800.1060</a> (7:30-22:00)</li>
+        <li>Xem <a href="#">2758</a>(8:00 -22:00)</li>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <section class="menu-bar">
+    <div class="container ">
+      <div class="menu-bar-content">
+        <ul>
+          <li><a href="#"><i class="fas fa-mobile-alt"></i>Điện thoại </a></li>
+          <li><a href="#"><i class="fas fa-laptop"></i>Laptop </a></li>
+          <li><a href="#"><i class="fas fa-tablet"></i>Tablet </a></li>
+          <li><a href="#"><i class="fas fa-headphones"></i>Phụ kiện <i style="margin-left: 4px;"
+                class="fas fa-sort-down"></i> </a>
+            <div class="sub-menu">
+              <div class="sub-menu-one">
+                <ul>
+                  <li><a href="#"><strong class="sub-menu-name">Phụ kiện di động</strong> </a></li>
+                  <li><a href="#">Pin sạc dự phòng </a></li>
+                  <li><a href="#">Sạc cáp </a></li>
+                  <li><a href="#">Miếng dán màn hình </a></li>
+                  <li><a href="#">Ốp lưng điện thoại </a></li>
+                  <li><a href="#">Ốp máy tính bảng</a></li>
+                  <li><a href="#">Gậy tự sướng </a></li>
+                  <li><a href="#">Giá đỡ lap top điện thoại </a></li>
+                  <li><a href="#">Túi chống nước </a></li>
+                  <li><a href="#">Túi đựng Air pod </a></li>
+                </ul>
+              </div>
+              <div class="sub-cate">
+                <div class="sub-menu-two">
+                  <ul>
+                    <li><a href="#"><strong class="sub-menu-name">Phụ kiện Laptop </strong> </a></li>
+                    <li><a href="#">Chuột , bàn phím </a></li>
+                    <li><a href="#">Thiết bị mạng </a></li>
+                    <li><a href="#">Camera ,Webcam </a></li>
+                    <li><a href="#">Balo túi chống sốc </a></li>
+                    <li><a href="#">Ốp máy tính bảng</a></li>
+                    <li><a href="#">Phần mềm </a></li>
+                  </ul>
+                </div>
+                <div class="sub-menu-three">
+                  <ul>
+                    <li><a href="#"><strong class="sub-menu-name">Thương hiệu hàng đầu </strong> </a></li>
+                    <li><a href="#">Apple </a></li>
+                    <li><a href="#">Samsung </a></li>
+                    <li><a href="#">Sony </a></li>
+                    <li><a href="#">Xiaomi </a></li>
+
+                  </ul>
+
+                </div>
+                <div class="sub-menu-four">
+                  <ul>
+                    <li><a href="#"><strong class="sub-menu-name">Thiết bị lưu trữ </strong> </a></li>
+                    <li><a href="#">Thẻ nhớ </a></li>
+                    <li><a href="#">USB </a></li>
+                    <li><a href="#">Ổ cứng di động </a></li>
+                    <li><a href="#"><strong class="sub-menu-name">Thiết bị âm thanh </strong></a></li>
+                    <li><a href="#">Tai nghe </a></li>
+                    <li><a href="#">Loa </a></li>
+                  </ul>
+                </div>
+                <div class="sub-menu-five">
+                  <ul>
+                    <li><a href="#"><strong class="sub-menu-name">Phụ kiện khác </strong> </a></li>
+                    <li><a href="#">Thiết bị thông minh </a></li>
+                    <li><a href="#">Phụ kiện ô tô </a></li>
+                    <li><a href="#">Máy tính cầm tay </a></li>
+                    <li><a href="#">Máy chiếu Tivi
+
+                        <Body></Body>
+                      </a></li>
+                    <li><a href="#">Quạt mini </a></li>
+                    <li><a href="#">Pin tiểu,pin điện thoại </a></li>
+                  </ul>
+                </div>
+
+
+              </div>
+
+            </div>
+
+          </li>
+          <li><a href=""><i><img src="./img/icon.png" alt="" class="icon-header"></i>Đồng hồ thời trang </li>
+          <li><a href=""><i class="fas fa-mouse"></i></i>Chuột máy tính </a></li>
+          <li><a href=""><i class="fas fa-tv"></i></i>PC <i style="margin-left: 4px;" class="fas fa-sort-down"></i> </a>
+            <div class="sub-menu-right">
+              <a href="">
+                <h3>Máy in </h3>
+              </a>
+              <a href="">
+                <h3>Mực in </h3>
+              </a>
+              <a href="">
+                <h3>Màn hình máy tính </h3>
+              </a>
+              <a href="">
+                <h3>Máy tính để bàn</h3>
+              </a>
+            </div>
+
+          </li>
+          <li><a href="">Máy cũ giá rẻ</a></li>
+          <li><a href="">Sim, thẻ cào </a></li>
+          <li><a href="">Trả góp điện nước </a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <h1 class="title">Điện thoại Iphone 14 Pro Max</h1>
+    <div class="box-main">
+      <div class="box_left">
+        <div class="box-1">
+          <div class="box-1-show">
+            <img src="./img/iphone-14-pro-max-vang-1.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="policy_intuitive">
+          <div class="policy">
+            <ul class="policy__list">
+              <li>
+                <p>Hư gì đổi nấy <b>12 tháng</b> tại 3385 siêu thị toàn quốc (miễn phí tháng đầu) </p>
+              </li>
+              <li>
+                <p>Bảo hành <b>chính hãng điện thoại 1 năm </b> tại các trung tâm bảo hành hãng </p>
+              </li>
+              <li>
+                <p>Bộ sản phẩm gồm: Hộp, Sách hướng dẫn, Cây lấy sim, Cáp Lightning - Type C</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="article-content">
+          <div class="article__content">
+            <h3 class="article__content__title">Thông tin sản phẩm</h3>
+            <h3 class="article__content__description">Mới đây thì chiếc điện thoại iPhone 14 Pro Max 256GB cũng đã được
+              chính thức lộ diện trên toàn cầu và đập tan bao lời đồn đoán bấy lâu nay, bên trong máy sẽ được trang bị
+              con chip hiệu năng khủng cùng sự nâng cấp về camera đến từ nhà Apple.</h3>
+          </div>
+        </div>
+      </div>
+      <div class="box_right">
+        <div class="scoll-right">
+          <div class="group-desk">
+            <a href="" class="box-item">128GB</a>
+            <a href="" class="box-item">256GB</a>
+            <a href="" class="box-item">512GB</a>
+            <a href="" class="box-item">1TB</a>
+          </div>
+        </div>
+        <div class="scoll-right">
+          <div class="group-desk">
+            <a href="" class="box-item">Vàng</a>
+            <a href="" class="box-item">Tím</a>
+            <a href="" class="box-item">Đen</a>
+            <a href="" class="box-item">Bạc</a>
+          </div>
+        </div>
+        <div class="box-info">
+          <div class="price-one">
+            <div class="box-price">
+              <p class="box-price-present">30.990.000đ</p>
+              <p class="box-price-old">32.990.000đ</p>
+            </div>
+          </div>
+          <div class="block_promo">
+            <div class="pr-top">
+              <p class="pr-txb">Khuyến mãi</p>
+              <i class="pr-txt">Giá và khuyến mãi dự kiến áp dụng đến hêt 30/5</i>
+            </div>
+            <div class="pr-content">
+              <div class="pr-item">
+                <div class="pr-item-one">
+                  <span class="pr-item-two">1</span>
+                  <div class="pr-item-three">
+                    <p>Thu cũ Đổi mới: Giảm đến 2 triệu (Tùy model máy cũ, không kèm các hình thức thanh toán online,
+                      mua kèm) </p>
+                  </div>
+                </div>
+                <div class="pr-item-one">
+                  <span class="pr-item-two">2</span>
+                  <div class="pr-item-three">
+                    <p>Thu cũ Đổi mới: Giảm đến 2 triệu (Tùy model máy cũ, không kèm các hình thức thanh toán online,
+                      mua kèm) </p>
+                    <p class="circle">Phụ kiện Apple: Giảm đến 50%. </p>
+                    <p class="circle">Apple Watch: Giảm đến 30% </p>
+                    <p class="circle">iPad: Giảm đến 50%. </p>
+                    <p class="circle">Macbook: Giảm đến 30%. </p>
+                  </div>
+                </div>
+                <div class="pr-item-one">
+                  <span class="pr-item-two">3</span>
+                  <div class="pr-item-three">
+                    <p>Giảm giá 10% gói Bảo Hiểm , Bảo Hành Mở Rộng </p>
+                  </div>
+                </div>
+                <div class="pr-item-one">
+                  <span class="pr-item-two">4</span>
+                  <div class="pr-item-three">
+                    <p>Nhập mã khuyến mãi giảm tối đa 200.000đ khi thanh toán qua VNPAY-QR</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="" class="btn-buy">MUA NGAY</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slider-one -->
+  <section class="slider-one">
+    <div class="container ">
+      <h2 class="slider-one-title">CHUYÊN TRANG THƯƠNG HIỆU </h2>
+      <div class="slider-one-container">
+        <div class="slider-one-content">
+          <div class="slider-one-content-item">
+            <a href="#"><img src="./img/silde7.png" alt=""></a>
+          </div>
+          <div class="slider-one-content-item">
+            <a href="#"><img src="./img/slide8.png" alt=""></a>
+          </div>
+          <div class="slider-one-content-item">
+            <a href="#"><img src="./img/slide9.png" alt=""></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer>
+    <section class="footer-top">
+      <div class="container ">
+
+        <div class="footer-col hide-on-mobile">
+          <ul class="footer-menu footer-menu-items">
+            <li>Lịch sử mua hàng </li>
+            <li>Cộng tác bán cùng TGDĐ</li>
+            <li>Tìm hiểu về mua trả góp </li>
+            <li>Chính sách bảo hành </li>
+            <li>Xem thêm </li>
+          </ul>
+        </div>
+        <div class="footer-col hide-on-mobile ">
+          <ul class="footer-menu footer-menu-items">
+            <li>Giới thiệu công ty (MWG.vn)</li>
+            <li>Tuyển dụng</li>
+            <li>Gửi góp ý khiếu nại </li>
+            <li>Tìm siêu thị </li>
+            <li>Xem bản mobile </li>
+          </ul>
+        </div>
+        <div class="footer-col footer-col-mobile">
+          <ul class="footer-menu mobile-border">
+            <li><strong>Tổng đài hỗ trợ (miễn phí gọi)</strong> </li>
+            <li>Gọi mua : <a href="#" style="color: #2589ff; font-size: 16px;">1800.1060</a> (7:30 - 22:30)</li>
+            <li>Kỹ thuật : <a href="#" style="color: #2589ff;font-size: 16px;">1800.1763</a> (7:30 - 22:30)</li>
+            <li>Khiếu nại : <a href="#" style="color: #2589ff;font-size: 16px;">1800.1062</a> (8:00 -22:00)</li>
+            <li>Bảo hành : <a href="#" style="color: #2589ff;font-size: 16px;">1800.1064</a> (8:00 -22:00)</li>
+          </ul>
+        </div>
+        <div class="footer-col footer-col-mobile">
+          <ul class="footer-menu ">
+            <li class="border-active "><a href="#" style="color: #2589ff; font-size: 16px;"><i
+                  class="fab fa-facebook"></i> 3770.8k Fan</a>
+              <a href="#" style="color: #2589ff; font-size: 16px;"><i class="fab fa-youtube icon-youtube"></i> 822k Đăng
+                ký</a>
+            </li>
+            <li class="border-active "><a href="#"><img src="./img/footer-img.png" alt="" class="footer-img"></a>
+              <a href="#"><img src="./img/footer-img1.png" alt="" class="footer-img"></a>
+              <a href="#"><img src="./img/footer-img2.png" alt="" class="footer-img"></a>
+            </li>
+            <li>Website cùng tập đoàn </li>
+            <li><a href="#"><img src="./img/footer-img3.jpg" alt="" class="footer-img"></a>
+              <a href="#"><img src="./img/footer-img4.png" alt="" class="footer-img"></a>
+              <a href="#" style="color: #333; font-size: 14px;"><i class="fas fa-home icon-home"></i>Mái ấm TGDĐ</a>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+      <div class="footer-copyright">
+        <p class="footer__text"> Công ty cổ phần Thế Giới Di Động. GPDKKD:0123456789 do sở KH & ĐT TP.HCM cấp ngày
+          02/01/2007. GPMXH: 238/GP-BTTTT do Bộ Thông Tin và Truyền Thông cấp ngày 04/06/2020.</p>
+        <p class="footer__text">
+          Địa chỉ: 128 Trần Quang Khải, P. Tân Định, Q.1, TP.Hồ Chí Minh. Điện thoại: 028 38125960. Email:
+          cskh@thegioididong.com. Chịu trách nhiệm nội dung: Ngọc Đức </p>
+        <p class="footer__text">Mã số doanh nghiệp: 0123456789do Sở Kế hoạch & Đầu tư TP Hà Nội cấp lần đầu ngày
+          10/02/2015</p>
+        <p class="footer__text">© 2020 - Bản quyền thuộc về Ngọc Đức</p>
+
+
+      </div>
+
+
+
+    </section>
+
+  </footer>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./swiper.js"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>
